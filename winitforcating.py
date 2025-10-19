@@ -11,7 +11,7 @@ TARGET_RMSE = 10
 TARGET_MAPE = 0.15
 
 
-TRAIN_FILE = r'C:\Users\a\Downloads\train (4).csv'
+TRAIN_FILE = r'C:\Users\a\Downloads\train.csv'
 TEST_FILE = r'C:\Users\a\Downloads\test.csv'
 
 
@@ -144,3 +144,4 @@ submission = test_data.copy()
 submission['sales'] = test_preds
 submission[['id', 'sales']].to_csv('submission.csv', index=False)
 print("Submission file 'submission.csv' created.")
+
